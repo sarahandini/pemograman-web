@@ -22,48 +22,99 @@
     </nav>
     <hr>
 
-    <main><h2>Fomulir Pemesanan jasa & Layanan Pelanggan</h2>
-    <p>Silakan isi formulir di bawah ini untuk mengajukan pemesanan paket jasa atau berkonsultasi dengan tim ahli kami.</p>
+    <main>
+        <h2>Fomulir Pemesanan jasa & Layanan Pelanggan</h2>
+        <p>Silakan isi formulir di bawah ini untuk mengajukan pemesanan paket jasa atau berkonsultasi dengan tim ahli
+            kami.</p>
+
+        <form action="#" method="POST">
+            <!-- Grupo 1: Data diri pelanggan -->
+            <fieldset>
+                <legend><b>1. Informasi Identitas Pemesanan</b></legend>
+                <br>
+                <label for="nama_lengkap">nama lengkap/ instansi:</label><br>
+                <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="contoh : Sarah" size="40"
+                    required>
+                <br><br>
+
+                <label for="email_pemesan">Alamat Email Aktif:</label><br>
+                <input type="email" id="email_pemesan" name="email_pemesan" placeholder="nama@domain.com" size="40"
+                    required>
+                <br><br>
+
+                <label for="no_whatsapp">Nomor WhatsaApp / HP :</label><br>
+                <input type="tel" id="no_whatsapp" name="no_whatsapp" placeholder="0878152130" required>
+                <br><br>
+
+                <label>Tipe Kategori Klien:</label><br>
+                <input type="radio" id="Kategori_personal" name="tipe_klien" value="Personal" checked>
+                <label for="Kategori_personal">Perorangan / UMKM</label>
+                &nbsp;&nbsp;
+                <input type="radio" id="Kategori_korporat" name="tipe_klien" value="Korporat">
+                <label for="Kategori_korporat">Perusahaan / instansi Pemerintah</label>
+                <br><br>
+            </fieldset>
+            <!-- Grup 2: Detail Pemesanan Layanan-->
+            <fieldset>
+                <legend><b>2. Rincian Pemesanan Digital</b></legend>
+                <br>
+                <label for="pilih_paket">Pilih Paket Layanan (Lihat katalog di halaman Produk):</label><br>
+                <select name="pilih_paket" name="pilih_paket" required>
+                    <option value="">-- Pilih Paket Jasa --</option>
+                    <option value="Silver">Paket Silver Branding (Rp 1.500.000)</option>
+                    <option value="Gold">Paket Gold Web Development (Rp 3.000.000)</option>
+                    <option value="Platinum">Paket Platinum Full Digital Transformation (Rp 5.000.000)</option>
+                    <option value="Custom">Konsultasi Custom Project</option>
+                </select>
+                <br><br>
+
+                <label>Layanan Tambahan (Add-Ons):</label><br>
+                <input type="checkbox" id="addon_seo" name="addons[]" value="SEO Optimization">
+                <label for="addon_seo">Optimasi SEO On-Page (+ Rp 500.000)</label><br>
+                <input type="checkbox" id="addon_express" name="addons[]" value="Express Delivery">
+                <label for="addon_express">Pengerjaan Kilat 3 Hari (+ Rp 750.000)</label><br>
+                <input type="checkbox" id="addon_content" name="addons[]" value="Content Writing">
+                <label for="addon_content">Penulisan Konten Artikel & Copywriting (+ Rp 400.000)</label>
+                <br><br>
+
+                <label for="target_selesai">Estimasi Target Selesai:</label><br>
+                <input type="date" id="target_selesai" name="target_selesai">
+                <br><br>
+
+                <label for="detail_pesan">Deskripsi / Catatan Khusus Proyek:</label><br>
+                <textarea id="detail_pesan" name="detail_pesan" rows="6" cols="50"
+                    placeholder="Tuliskan gambaran singkat mengenai proyek yang Anda inginkan..."></textarea>
+                <br><br>
+            </fieldset>
+            <br>
+
+            <!-- Tombol Aksi -->
+            <button type="submit"><b>Kirim Pemesanan Sekarang</b></button>
+            &nbsp;
+            <button type="reset">Bersihkan Formulir</button>
+
+            </fieldset>
+        </form>
+        <!-- Bagian Informasi Alamat & Peta Studio -->
+        <section>
+            <hr>
+            <hr3>Kantor & Studio Operasional</hr3>
+            <p><b>Poliban DigiCraft Studio Banjarmasin</b><br>
+                Gedung Labotarium Bisnis Digital, Kampus Politeknik Negeri Banjarmasin <br>
+                Jl. Brigjen H. Hasan Basry, Kayu tangi, Banjarmasin, Kalimantan Selatan <br>
+                Email: <i>info@digicraftstudio.ac.id</i> | WhattsApp:
+                <i>0812-5555-8888</i>
+            </p>
+
+            <h4>Lokasi Studio diGoogle Maps:</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.2197196346174!2d114.5819303!3d-3.2956939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423a80d47ba6b%3A0x8f5abfaddfe5a2d7!2sPoliteknik%20Negeri%20Banjarmasin!5e0!3m2!1sen!2sid!4v1791270619761!5m2!1sen!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin" width="100%" height="250" frameborder="0" style="border:0," allowfullscreen=""></iframe>></iframe>"
+            
+        </section>
     
-<form action="#" method="POST"> 
-<!-- Grupo 1: Data diri pelanggan -->
- <fieldset>
-    <legend><b>1. Informasi Identitas Pemesanan</b></legend>
-    <br>
-<label for="nama_lengkap">nama lengkap/ instansi:</label><br>
-<input type="text" id="nama_lengkap" name="nama_lengkap"
-placeholder="contoh : Sarah" size="40" required>
-<br><br>
-
-<label for="email_pemesan">Alamat Email Aktif:</label><br>
-<input type="email" id="email_pemesan"
-name="email_pemesan" placeholder="nama@domain.com"
-size="40" required>
-<br><br>
-
-<label for="no_whatsapp">Nomor WhatsaApp / HP :</label><br>
-<input type="tel" id="no_whatsapp" name="no_whatsapp" placeholder="0878152130" required>
-<br><br>
-
-<label>Tipe Kategori Klien:</label><br>
-<input type="radio" id="Kategori_personal"
-name="tipe_klien" value="Personal" checked>
-<label for="Kategori_personal">Perorangan / UMKM</label>
-&nbsp;&nbsp;
-<input type="radio" id="Kategori_korporat"
-name="tipe_klien" value="Korporat">
-<label for="Kategori_korporat">Perusahaan / instansi Pemerintah</label>
-<br><br>
- </fieldset>
- <!-- Grup 2: Detail Pemesanan Layanan-->
-<fieldset><legend><b>2. Rincian Pemesanan Digital</b></legend>
-</fieldset>
-</form>
-</main>
     <footer>
         <hr>
-        <p align="center">&copy; 2026 Poliban DigiCraft Studio</p>
+        <p align="center">&copy; 2026 Poliban DigiCraft Studio - Hak Cipta Dilindungi </Undang-Undang></p>
     </footer>
-</body>
-</html>
-
