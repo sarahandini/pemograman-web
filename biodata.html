@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1. 0">
+        <title>Biodata</title>
+        <!-- 1. MENGHUBUNGKAN EXTERNAL CSS GLOBAL -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
 <body>
-    <h1>PROFIL BIODATA MAHASISWA</h1>
-    <!--Profil Utama-->
-    <div>
-            <span>Nama :</span><strong>Sarah Andini</strong><br>
-            <span> NIM :</span><em>E030425134</em><br>
-    </div>
-    <!--Riwayat Pendidikan-->
-    <div>
-            <p><strong>(2) Riwayat Pendididkan</strong></p>
-            <ol>
-                <li>SD MDIM Banjarmasin</li>
-                <li>SMP MTSN Mulawarman Banjarmasin</li>
-                <li>SMA SMKN 4 Banjarmasin</li>
-            </ol>
-    </div>
-    <!--Hobi/Minat-->
-        <div>
-            <p><strong>(3) Hobi/Minat</strong></p>
-            <ul>
-                <li>Berenang</li>
-                <li>Mendengar musik</li>
-                <li>Traveling</li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>PROFIL BIODATA MAHASISWA</h1>
+            <nav>
+                <a href="index.html">Beranda</a> |
+                <a href="biodata.html" class="active"> Biodata Mahasiswa</a> |
+                <a href="produk.html">Katalog & Portofolio</a> |
+                <a href="kontak.html">Kontak & pemesanan</a> |
+            </nav>
         </div>
+    </header>
 
+    <main class="container">
+        <!-- PROFIL BIODATA MAHASISWA -->
+        <section class="section">
+            <h2 class="section-title">Profil Utama</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <li> Nama :Sarah Andini</li>
+                        <li>NIM :E030425134</li>
+                        <li>Program Studi :D4 Bisnis Digital</li>
+                        <li>Kelas :3E</li>
+                    </div>
+                </article>
+        </section>
 
+        <!-- RIWAYAT PENDIDIKAN -->
+        <section class="section">
+            <h2 class="section-title">Riwayat Pendidikan</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <li>SD :MDIM Banjarmasin</li>
+                        <li> SMP :MTSN Mulawarman Banjarmasin</li>
+                        <li> SMA :SMKN 4 Banjarmasin</li>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- HOBI/MINAT -->
+        <section class="section">
+            <h2 class="section-title">Hobi/Minat</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <div class="hobi-minat">
+                            <li>Berenang</li>
+                            <li>Mendengar musik</li>
+                            <li>Traveling</li>
+                        </div>
+                </article>
+            </div>
+        </section>
 </body>
+
 </html>
